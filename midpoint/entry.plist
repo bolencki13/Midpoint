@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Midpoint;
+	cell = PSLinkCell;
+	detail = MidpointListController;
+	icon = Midpoint.png;
+	isController = 1;
+	label = Midpoint;
+    };
+}

@@ -1,0 +1,10 @@
+Package: com.bolencki13.Midpoint
+Name: Midpoint
+Depends: mobilesubstrate
+Version: 1.0.3
+Architecture: iphoneos-arm
+Description: Redesigned homescreen view
+Maintainer: Brian Olencki <bolencki13@gmail.com>
+Author: Brian Olencki <bolencki13@gmail.com>
+Section: Tweaks
+Depiction: http://cydia.bolencki13.com/repo/depictions/?p=com.bolencki13.zentrum

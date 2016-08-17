@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+<dict>
+  <key>cell</key>
+  <string>PSGroupCell</string>
+  <key>label</key>
+  <string>Left Page</string>
+</dict>
+<dict>
+  <key>cell</key>
+  <string>PSSegmentCell</string>
+  <key>default</key>
+  <integer>1</integer>
+  <key>defaults</key>
+  <string>com.bolencki13.zentrum</string>
+  <key>detail</key>
+  <string>PSListItemsController</string>
+  <key>key</key>
+  <string>segment_left</string>
+  <key>validTitles</key>
+  <array>
+    <string>CC Toggles</string>
+    <string>Dock Apps</string>
+    <string>Media Toggles</string>
+  </array>
+  <key>validValues</key>
+  <array>
+    <integer>1</integer>
+    <integer>2</integer>
+    <integer>3</integer>
+  </array>
+</dict>
+
+<dict>
+  <key>cell</key>
+  <string>PSGroupCell</string>
+  <key>label</key>
+  <string>Middle Page</string>
+</dict>
+<dict>
+  <key>cell</key>
+  <string>PSSegmentCell</string>
+  <key>default</key>
+  <integer>2</integer>
+  <key>defaults</key>
+  <string>com.bolencki13.zentrum</string>
+  <key>detail</key>
+  <string>PSListItemsController</string>
+  <key>key</key>
+  <string>segment_middle</string>
+  <key>validTitles</key>
+  <array>
+    <string>CC Toggles</string>
+    <string>Dock Apps</string>
+    <string>Media Toggles</string>
+  </array>
+  <key>validValues</key>
+  <array>
+    <integer>1</integer>
+    <integer>2</integer>
+    <integer>3</integer>
+  </array>
+</dict>
+
+<dict>
+  <key>cell</key>
+  <string>PSGroupCell</string>
+  <key>label</key>
+  <string>Right Page</string>
+</dict>
+<dict>
+  <key>cell</key>
+  <string>PSSegmentCell</string>
+  <key>default</key>
+  <integer>3</integer>
+  <key>defaults</key>
+  <string>com.bolencki13.zentrum</string>
+  <key>detail</key>
+  <string>PSListItemsController</string>
+  <key>key</key>
+  <string>segment_right</string>
+  <key>validTitles</key>
+  <array>
+    <string>CC Toggles</string>
+    <string>Dock Apps</string>
+    <string>Media Toggles</string>
+  </array>
+  <key>validValues</key>
+  <array>
+    <integer>1</integer>
+    <integer>2</integer>
+    <integer>3</integer>
+  </array>
+</dict>
+</array>
+<key>title</key>
+<string>Dock</string>
+</dict>
+</plist>
