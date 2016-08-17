@@ -29,6 +29,9 @@
 	        }
 	    }
 }
+- (void)github {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://github.com/bolencki13/Midpoint"]];
+}
 @end
 
 

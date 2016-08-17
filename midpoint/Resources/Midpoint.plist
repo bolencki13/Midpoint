@@ -106,6 +106,14 @@
 			<key>action</key>
 			<string>AOkhtenberg</string>
 		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Github</string>
+			<key>action</key>
+			<string>github</string>
+		</dict>
 
 
 	</array>

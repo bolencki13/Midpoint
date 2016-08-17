@@ -264,12 +264,6 @@
 }
 %end
 
-%hook SBDisplayItem
-+ (id)displayItemWithType:(NSString *)arg1 displayIdentifier:(id)arg2 {
-	%log;
-	return %orig;
-}
-%end
 
 #pragma mark - Dock
 static SBDockView *_dockView;
