@@ -138,7 +138,7 @@
 		[self addSubview:srfSpotlight];
 
 		NSUserDefaults *prefs = [[NSUserDefaults alloc] initWithSuiteName:@"com.bolencki13.zentrum"];
-		if ([prefs boolForKey:@"google"] == NO) {
+		if ([prefs integerForKey:@"search"] == 1) {
 			UIView *tapView = [[UIView alloc] initWithFrame:srfSpotlight.bounds];
 			tapView.userInteractionEnabled = YES;
 			[srfSpotlight addSubview:tapView];
@@ -188,10 +188,16 @@
 %new
 - (void)searchGoogle:(UITextField*)sender {
 	[sender resignFirstResponder];
-	if ([sender.text containsString:@"http"]) {
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:sender.text]];
-	} else {
-			[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://www.google.com/#q=%@",[sender.text stringByReplacingOccurrencesOfString:@" " withString:@"+"]]]];
+
+	NSUserDefaults *prefs = [[NSUserDefaults alloc] initWithSuiteName:@"com.bolencki13.zentrum"];
+	if ([prefs integerForKey:@"search"] == 2) {
+		if ([sender.text containsString:@"http"]) {
+				[[UIApplication sharedApplication] openURL:[NSURL URLWithString:sender.text]];
+		} else {
+				[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://www.google.com/#q=%@",[sender.text stringByReplacingOccurrencesOfString:@" " withString:@"+"]]]];
+		}
+	} else if ([prefs integerForKey:@"search"] == 3) {
+
 	}
 }
 %end
